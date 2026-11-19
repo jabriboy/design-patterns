@@ -265,7 +265,7 @@ const score = await scorer.score(sensorReading);`
   },
   {
     id: "facade",
-    name: "Façade",
+    name: "Facade",
     family: "Estrutura",
     number: "07",
     accent: "blue",
