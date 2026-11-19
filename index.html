@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#13201c" />
+    <meta name="description" content="Uma apresentação técnica, visual e prática sobre dez padrões de design, com exemplos TypeScript criativos." />
+    <title>Padrões de Design — Laboratório TypeScript</title>
+    <link rel="icon" type="image/svg+xml" href="/logo.svg" />
+    <link rel="stylesheet" href="/src/styles.css" />
+    <script type="module" src="/src/app.js"></script>
+  </head>
+  <body>
+    <a class="skip-link" href="#screen">Pular para o conteúdo</a>
+    <div class="app-shell" id="appShell">
+      <aside class="sidebar" aria-label="Navegação da apresentação">
+        <a class="brand" href="#inicio" aria-label="Padrões Studio — início">
+          <span class="brand-mark" aria-hidden="true"><svg viewBox="0 0 40 40"><path d="M15 11 7 20l8 9M25 11l8 9-8 9M22 8l-4 24"/></svg></span>
+          <span class="brand-copy"><strong>PADRÕES</strong><small>STUDIO / 01</small></span>
+        </a>
+        <div class="sidebar-rule"></div>
+        <div class="nav-heading"><span>ROTEIRO</span><span>10</span></div>
+        <nav class="chapter-nav" id="chapterNav" aria-label="Padrões de design"></nav>
+        <div class="sidebar-bottom">
+          <div class="mini-stack" aria-hidden="true"><span>{</span><span>TS</span><span>}</span></div>
+          <p>Uma ideia.<br /><strong>Um exemplo que funciona.</strong></p>
+          <span class="sidebar-version">GUIA TÉCNICO · 2026</span>
+        </div>
+      </aside>
+
+      <div class="main-column">
+        <header class="topbar">
+          <div class="breadcrumbs"><span>ENGENHARIA DE SOFTWARE</span><i>/</i><span id="crumbCurrent">APRESENTAÇÃO</span></div>
+          <div class="topbar-actions">
+            <span class="slide-counter" id="slideCounter">00 <b>/</b> 10</span>
+            <button class="stage-button" id="stageButton" type="button" aria-pressed="false"><span class="stage-icon" aria-hidden="true">↗</span><span>Modo palco</span></button>
+          </div>
+        </header>
+        <div class="progress-track" aria-hidden="true"><span id="progressBar"></span></div>
+        <main id="screen" tabindex="-1" aria-live="polite"></main>
+        <footer class="deck-footer">
+          <div class="footer-note"><span class="status-dot"></span><span>APRESENTAÇÃO INTERATIVA</span></div>
+          <div class="deck-controls">
+            <button class="arrow-button" id="prevButton" type="button" aria-label="Slide anterior" title="Anterior (←)">←</button>
+            <span class="key-hint"><kbd>←</kbd><kbd>→</kbd> navegar</span>
+            <button class="arrow-button arrow-next" id="nextButton" type="button" aria-label="Próximo slide" title="Próximo (→)">→</button>
+          </div>
+          <a class="footer-top" href="#inicio">VOLTAR AO INÍCIO <span aria-hidden="true">↑</span></a>
+        </footer>
+      </div>
+    </div>
+  </body>
+</html>
